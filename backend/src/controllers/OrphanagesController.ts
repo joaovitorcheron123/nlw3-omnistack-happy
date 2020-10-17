@@ -32,7 +32,7 @@ export default {
       instructions,
       opening_hours,
       open_on_weekends,
-    } = request.body
+    } = request.body;
   
     const orphanagesRepository = getRepository(Orphanage);
 
@@ -49,7 +49,7 @@ export default {
         about,
         instructions,
         opening_hours,
-        open_on_weekends,
+        open_on_weekends: open_on_weekends === 'true',
         images
     };
 
@@ -68,6 +68,8 @@ export default {
         })
         )
     });
+
+    const finalData = schema.cast(data);
 
     await schema.validate(data, {
       abortEarly: false,
