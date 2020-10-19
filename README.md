@@ -6,7 +6,7 @@ This project includes Back-end and also Front-end.
 </p>
 <p align="center">
 (pt-BR)
-Esse projeto englobal Back-end e também Front-end.
+Esse projeto engloba Back-end e também Front-end.
 </p>
 
 <p align="center">
